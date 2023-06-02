@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./blogCard.module.css";
 
-const blogCard = () => {
-  return <div>blogCard</div>;
+const BlogCard = () => {
+  return <div>BlogCard</div>;
 };
 
-export default blogCard;
+export default BlogCard;
