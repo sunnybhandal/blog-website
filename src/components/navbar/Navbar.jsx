@@ -28,16 +28,28 @@ const Navbar = () => {
               />
               {showDropdown && (
                 <div className={classes.dropdown}>
-                  <h2 onClick={handleHideDropdown}>Close Icon</h2>
-                  <button className={classes.logout}>Logout</button>
-                  <Link href="/create-post" className={classes.create}>
+                  <p onClick={handleHideDropdown}>Close Icon</p>
+                  <button
+                    onClick={handleHideDropdown}
+                    className={classes.logout}
+                  >
+                    Logout
+                  </button>
+                  <Link
+                    onClick={handleHideDropdown}
+                    href="/create-post"
+                    className={classes.create}
+                  >
                     Create
                   </Link>
                 </div>
               )}
             </div>
           ) : (
-            <h2>hi</h2>
+            <>
+              <button className={classes.login}>Login</button>
+              <Link href="/register">Regsiter</Link>
+            </>
           )}
         </ul>
       </div>
