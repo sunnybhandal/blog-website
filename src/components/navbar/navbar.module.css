@@ -6,4 +6,11 @@
   background-color: white;
   box-shadow: 2px 5px 27px -8px rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.wrapper {
 }
